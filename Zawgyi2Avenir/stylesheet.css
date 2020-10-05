@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Zawgyi-One';
+    font-family: Zawgyi2Avenir, Zawgyi-One;
     src: url('ZawgyiAvenir.woff2') format('woff2'),
         url('ZawgyiAvenir.woff') format('woff');
     font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Zawgyi-One';
+    font-family: Zawgyi2Avenir, Zawgyi-One;
     src: url('ZawgyiAvenir-Bold.woff2') format('woff2'),
         url('ZawgyiAvenir-Bold.woff') format('woff');
     font-weight: bold;
