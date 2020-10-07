@@ -1,0 +1,23 @@
+body p {
+	font-family:'Ours-Unicode'; 
+	font-size:1.1rem;
+}
+hlaH1 {
+  font-family:'GHK KengTung';
+  font-size: 2rem;
+  color: #ff9900;
+}
+
+Des {
+	font-family:'Ours-Unicode'; 
+	font-size:1.2rem;
+	text-indent: 50px;
+	color: #000;
+}
+
+Price {
+	font-family:'Ours-Unicode'; 
+	font-size:1rem;
+	text-indent: 50px;
+	color: #555555;
+}
