@@ -22,6 +22,17 @@ hlaTitle {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+hlaT2 {
+font-family:'Myanmar Yinmar'; 
+color:#fff200; 
+font-size: 2rem; 
+background: linear-gradient(to bottom, #ffde00 10%, #fdbb63 50%); 
+	-webkit-background-clip: 
+	text; 
+	-webkit-text-fill-color: 
+	transparent;
+}
 #rcorners1 {
   border-radius: 15px;
   padding: 2px; 
