@@ -12,7 +12,7 @@ hlaTitle {
   font-family:'Myanmar Yinmar';
   font-size: 4rem;
   color: #ff9900;
-   	background: linear-gradient(to bottom, #fff 0%, #9a9a9a 70%);
+   	background: linear-gradient(to bottom, #fff 0%, #9a9a9a 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -21,7 +21,7 @@ hlaTitle {
   padding: 2px; 
   text-align: center; 
   width: 95%;
-  height:100px;
+  height:6.5rem;
   background:#a51122;
 
 }
