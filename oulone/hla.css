@@ -27,6 +27,7 @@ hlaT2 {
 	font-family:'Myanmar Yinmar';
 	color:#fff200; 
 	font-size: 2rem; 
+	text-align: center;
 	background: linear-gradient(to bottom, #ffde00 10%, #fdbb63 50%); 
 		-webkit-background-clip: text; 
 		-webkit-text-fill-color: transparent;
