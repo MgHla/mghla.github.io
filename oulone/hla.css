@@ -1,8 +1,11 @@
-/* Last Edited: 2020-10-07 2154 */
+/* Last edited 2020-10-08 0053 */
 body {
   background-color: #2f2d2e;
   margin: 10px;
   text-align: center;
+  
+    min-height: 75rem;
+  padding-top: 4.5rem;
 }
 
 body p {
@@ -17,6 +20,15 @@ body p {
   margin-right: auto;
 }
 
+.headerImg {
+  display: block;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4), 0 6px 20px 0 rgba(0, 0, 0, .4);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 hlaTitle {
   font-family:'Myanmar Yinmar';
   font-size: 2.5rem;
@@ -28,13 +40,13 @@ hlaTitle {
 
 hlaT2 {
 	font-family:'Myanmar Yinmar';
-	color:#fff200; 
 	font-size: 2rem; 
 	text-align: center;
 	background: linear-gradient(to bottom, #ffde00 10%, #fdbb63 50%); 
 		-webkit-background-clip: text; 
 		-webkit-text-fill-color: transparent;
 	display: block;
+	color:#fff200; 
 }
 #rcorners1 {
   border-radius: 15px;
@@ -45,6 +57,13 @@ hlaT2 {
   background:#a51122;
 
 }
+.hlaimg {
+	width:100%;
+	border-radius: 50px 0px 50px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4), 0 6px 20px 0 rgba(0, 0, 0, .4);
+	text-align: center;
+}
+
 hlaH1 {
   font-family:'Myanmar Yinmar';
   font-size: 1.5rem;
