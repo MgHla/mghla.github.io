@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Myanmar Yinmar';
+    src: url('MyanmarYinmar.woff2') format('woff2'),
+        url('MyanmarYinmar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NK SSmart2';
+    src: url('NKSSmart2.woff2') format('woff2'),
+        url('NKSSmart2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
