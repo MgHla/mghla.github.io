@@ -1,23 +1,43 @@
+body {
+  background-color: #2f2d2e;
+  margin: 10px;
+}
+
 body p {
 	font-family:'Ours-Unicode'; 
 	font-size:1.1rem;
 }
+
+hlaTitle {
+  font-family:'GHK KengTung';
+  font-size: 4rem;
+  color: #ff9900;
+   	background: linear-gradient(to right, #fff 0%, #9a9a9a 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 hlaH1 {
   font-family:'GHK KengTung';
   font-size: 2rem;
   color: #ff9900;
+   	background: linear-gradient(to right, #fff 0%, #9a9a9a 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
 }
 
 Des {
-	font-family:'Ours-Unicode'; 
+	font-family:'Ours-Unicode';
+	text-shadow: 2px 2px 4px #000;
 	font-size:1.2rem;
 	text-indent: 50px;
-	color: #000;
+	color: #fdbb63;
 }
 
 Price {
 	font-family:'Ours-Unicode'; 
 	font-size:1rem;
-	text-indent: 50px;
-	color: #555555;
+	color: #ebbe73;
+	padding-left: 10px;
 }
