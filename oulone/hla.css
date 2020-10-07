@@ -4,12 +4,12 @@ body {
 }
 
 body p {
-	font-family:'Ours-Unicode'; 
+	font-family:'NK SSmart2'; 
 	font-size:1.1rem;
 }
 
 hlaTitle {
-  font-family:'GHK KengTung';
+  font-family:'Myanmar Yinmar';
   font-size: 4rem;
   color: #ff9900;
    	background: linear-gradient(to bottom, #fff 0%, #9a9a9a 70%);
@@ -26,7 +26,7 @@ hlaTitle {
 
 }
 hlaH1 {
-  font-family:'GHK KengTung';
+  font-family:'Myanmar Yinmar';
   font-size: 1.5rem;
   color: #ff9900;
    	background: linear-gradient(to right, #fff 0%, #9a9a9a 100%);
@@ -36,7 +36,7 @@ hlaH1 {
 }
 
 Des {
-	font-family:'Ours-Unicode';
+	font-family:'NK SSmart2';
 	text-shadow: 1px 2px 8px #000;
 	font-size:1.1rem;
 	color: #fdbb63;
@@ -44,7 +44,7 @@ Des {
 }
 
 Price {
-	font-family:'Ours-Unicode'; 
+	font-family:'NK SSmart2'; 
 	text-shadow: 1px 1px 4px #000;
 	font-size:1rem;
 	color: #ebbe73;
