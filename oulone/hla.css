@@ -12,20 +12,27 @@ hlaTitle {
   font-family:'GHK KengTung';
   font-size: 4rem;
   color: #ff9900;
-   	background: linear-gradient(to right, #fff 0%, #9a9a9a 100%);
+   	background: linear-gradient(to bottom, #fff 0%, #9a9a9a 70%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  line-height: 2;
 }
+#rcorners1 {
+  border-radius: 15px;
+  padding: 2px; 
+  text-align: center; 
+  width: 95%;
+  height:100px;
+  background:#a51122;
 
+}
 hlaH1 {
   font-family:'GHK KengTung';
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ff9900;
    	background: linear-gradient(to right, #fff 0%, #9a9a9a 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 Des {
