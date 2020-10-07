@@ -1,6 +1,7 @@
 body {
   background-color: #2f2d2e;
   margin: 10px;
+  text-align: center;
 }
 
 body p {
@@ -65,4 +66,5 @@ Price {
 	text-shadow: 1px 1px 4px #000;
 	font-size:1rem;
 	color: #ebbe73;
+
 }
