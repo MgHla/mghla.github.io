@@ -13,7 +13,10 @@
 
     <!-- Bootstrap core CSS -->
 <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -56,6 +59,58 @@
   </div>
 </nav>
 
+   <main class="container">
+      <h1>Myanmar (Burmese) Name English 2 Myanmar</h1>
+	  <h6>developed by Kyaw Zin Hein</h6>
+      <form>
+        <div class="grid">
+          <label for="enName"
+            >English Name <input type="text" name="enName" id="enName" required
+          /></label>
+          <label for="mmName"
+            >Myanmar (Burmese) Name
+            <input type="text" name="mmName" id="mmName" readonly
+          /></label>
+        </div>
+        <button>Convert</button>
+      </form>
+    </main>
+
+    <script type="module">
+      import Papa from 'https://esm.sh/papaparse@5.4.1';
+
+      const form = document.querySelector('form');
+      const enNameInput = document.querySelector('#enName');
+      const mmNameInput = document.querySelector('#mmName');
+
+      const enToMmMap = {};
+
+      form.addEventListener('submit', async e => {
+        e.preventDefault();
+
+        if (Object.keys(enToMmMap).length === 0) {
+          const csv = await fetch(
+            'https://raw.githubusercontent.com/MgHla/Myanmar-Name_en-2-mm/main/MyanmarName-en-mm.csv'
+          ).then(res => res.text());
+
+          const { data } = Papa.parse(csv);
+
+          data.slice(1).forEach(dt => {
+            enToMmMap[dt[0].toLowerCase()] = dt[1];
+          });
+        }
+
+        const enName = enNameInput.value.trim();
+        let mmName = '';
+
+        enName.split(' ').forEach(enWord => {
+          mmName += enToMmMap[enWord.toLowerCase()] || enWord;
+        });
+
+        mmNameInput.value = mmName;
+      });
+    </script>
+    
 <main role="main" class="container">
 
   <div class="starter-template">
