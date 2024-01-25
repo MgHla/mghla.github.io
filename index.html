@@ -62,7 +62,7 @@
    <main class="container">
       <h1>Myanmar (Burmese) Name English 2 Myanmar</h1>
 	  <h6>developed by Kyaw Zin Hein</h6>
-      <form>
+      <form id="en2mm">
         <div class="grid">
           <label for="enName"
             >English Name <input type="text" name="enName" id="enName" required
@@ -79,7 +79,7 @@
     <script type="module">
       import Papa from 'https://esm.sh/papaparse@5.4.1';
 
-      const form = document.querySelector('form');
+      const form = document.querySelector('#en2mm');
       const enNameInput = document.querySelector('#enName');
       const mmNameInput = document.querySelector('#mmName');
 
