@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
-<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
@@ -52,13 +52,15 @@
         <a class="nav-link" href="winkalaw.html">WinKalaw WebFont</a>
       </li>
     </ul>
+	<!--
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
+	-->
   </div>
 </nav>
-
+<br><br>
    <main class="container">
       <h1>Myanmar (Burmese) Name English 2 Myanmar</h1>
 	  <h6>developed by Kyaw Zin Hein</h6>
@@ -77,6 +79,7 @@
     </main>
 
     <script type="module">
+
       import Papa from 'https://esm.sh/papaparse@5.4.1';
 
       const form = document.querySelector('form');
@@ -89,9 +92,8 @@
         e.preventDefault();
 
         if (Object.keys(enToMmMap).length === 0) {
-          const csv = await fetch(
-            'https://raw.githubusercontent.com/MgHla/Myanmar-Name_en-2-mm/main/MyanmarName-en-mm.csv'
-          ).then(res => res.text());
+          const csv = await fetch(         'https://raw.githubusercontent.com/MgHla/Myanmar-Name_en-2-mm/main/MyanmarName-en-mm.csv'
+		  ).then(res => res.text());
 
           const { data } = Papa.parse(csv);
 
@@ -101,15 +103,17 @@
         }
 
         const enName = enNameInput.value.trim();
-        let mmName = '';
+       let mmName = '';
 
         enName.split(' ').forEach(enWord => {
           mmName += enToMmMap[enWord.toLowerCase()] || enWord;
         });
 
         mmNameInput.value = mmName;
+
       });
-    </script>    
+    </script>
+    
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </html>
